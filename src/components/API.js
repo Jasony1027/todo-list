@@ -12,9 +12,10 @@ export default function API(props) {
   });
   useEffect(() => {
     setAppState({ loading: true });
-    const apiUrl = `https://api.nytimes.com/svc/mostpopular/v2/emailed/7.json?api-key=${apiKey}`;
+    const apiUrl = `https://api.nytimes.com/svc/mostpopular/v2/emailed/1.json?api-key=${apiKey}`;
     axios.get(apiUrl).then((news) => {
       const allNews = news.data.results;
+      console.log(allNews[0].media[0]["media-metadata"][2].url);
       setAppState({ loading: false, newsList: allNews });
     });
   }, [setAppState]);

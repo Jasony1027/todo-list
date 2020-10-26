@@ -5,9 +5,9 @@ import Form from "./Form";
 import FilterButton from "./FilterButton";
 
 const DATA = [
-  { id: "todo-0", name: "Eat", status: 0 },
-  { id: "todo-1", name: "Sleep", status: 0 },
-  { id: "todo-2", name: "Repeat", status: 0 },
+  { id: "todo-0", name: "Code", completed: false },
+  { id: "todo-1", name: "Sleep", completed: false },
+  { id: "todo-2", name: "Repeat", completed: false }
 ];
 
 export const FILTER_MAP = {
@@ -17,7 +17,7 @@ export const FILTER_MAP = {
 };
 export const FILTER_NAMES = Object.keys(FILTER_MAP);
 
-function Home(props) {
+function Home() {
   //hooks
   const [tasks, setTasks] = useState(DATA);
   const [filter, setFilter] = useState("All");

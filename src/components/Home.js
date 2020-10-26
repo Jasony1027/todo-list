@@ -12,9 +12,8 @@ const DATA = [
 
 export const FILTER_MAP = {
   All: () => true,
-  NotStarted: (task) => task.status === 0,
-  Started: (task) => task.status === 1,
-  Completed: (task) => task.status === 2,
+  Active: (task) => !task.completed,
+  Completed: (task) => task.completed,
 };
 export const FILTER_NAMES = Object.keys(FILTER_MAP);
 

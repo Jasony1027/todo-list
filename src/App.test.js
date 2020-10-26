@@ -43,6 +43,6 @@ describe("Heading text test", () => {
   it("Heading text should display the number of active task(s)", () => {
     const { getByTestId } = render(<App tasks={mockData} />);
     const headingText = getByTestId("headingText");
-    expect(headingText.textContent).toBe("3 tasks remaining");
+    expect(headingText.textContent).toBe("0 tasks remaining");
   });
 });

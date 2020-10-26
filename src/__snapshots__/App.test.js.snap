@@ -105,168 +105,18 @@ exports[`The App component should be rendered successfully App component snapsho
     data-testid="headingText"
     id="list-heading"
   >
-    3 tasks remaining
+    0 tasks remaining
   </h2>
   <ul
     aria-labelledby="list-heading"
     className="todo-list stack-large stack-exception"
+  />
+  <button
+    className="btn btn__clearAll"
+    onClick={[Function]}
+    type="button"
   >
-    <li
-      className="todo"
-    >
-      <div
-        className="stack-small"
-      >
-        <div
-          className="c-cb"
-        >
-          <input
-            defaultChecked={true}
-            id="todo-0"
-            onChange={[Function]}
-            type="checkbox"
-          />
-          <label
-            className="todo-label"
-            htmlFor="todo-0"
-          >
-            Code
-          </label>
-        </div>
-        <div
-          className="btn-group"
-        >
-          <button
-            className="btn"
-            onClick={[Function]}
-            type="button"
-          >
-            Edit 
-            <span
-              className="visually-hidden"
-            >
-              Code
-            </span>
-          </button>
-          <button
-            className="btn btn__danger"
-            onClick={[Function]}
-            type="button"
-          >
-            Delete 
-            <span
-              className="visually-hidden"
-            >
-              Code
-            </span>
-          </button>
-        </div>
-      </div>
-    </li>
-    <li
-      className="todo"
-    >
-      <div
-        className="stack-small"
-      >
-        <div
-          className="c-cb"
-        >
-          <input
-            defaultChecked={false}
-            id="todo-1"
-            onChange={[Function]}
-            type="checkbox"
-          />
-          <label
-            className="todo-label"
-            htmlFor="todo-1"
-          >
-            Sleep
-          </label>
-        </div>
-        <div
-          className="btn-group"
-        >
-          <button
-            className="btn"
-            onClick={[Function]}
-            type="button"
-          >
-            Edit 
-            <span
-              className="visually-hidden"
-            >
-              Sleep
-            </span>
-          </button>
-          <button
-            className="btn btn__danger"
-            onClick={[Function]}
-            type="button"
-          >
-            Delete 
-            <span
-              className="visually-hidden"
-            >
-              Sleep
-            </span>
-          </button>
-        </div>
-      </div>
-    </li>
-    <li
-      className="todo"
-    >
-      <div
-        className="stack-small"
-      >
-        <div
-          className="c-cb"
-        >
-          <input
-            defaultChecked={false}
-            id="todo-2"
-            onChange={[Function]}
-            type="checkbox"
-          />
-          <label
-            className="todo-label"
-            htmlFor="todo-2"
-          >
-            Repeat
-          </label>
-        </div>
-        <div
-          className="btn-group"
-        >
-          <button
-            className="btn"
-            onClick={[Function]}
-            type="button"
-          >
-            Edit 
-            <span
-              className="visually-hidden"
-            >
-              Repeat
-            </span>
-          </button>
-          <button
-            className="btn btn__danger"
-            onClick={[Function]}
-            type="button"
-          >
-            Delete 
-            <span
-              className="visually-hidden"
-            >
-              Repeat
-            </span>
-          </button>
-        </div>
-      </div>
-    </li>
-  </ul>
+    Clear All Tasks
+  </button>
 </div>
 `;

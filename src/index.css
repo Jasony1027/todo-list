@@ -109,6 +109,13 @@ body {
 .btn-group > * + * {
   margin-left: 0.8rem;
 }
+.btn__clearAll {
+  color: #fff;
+  background-color: #ca3c3c;
+  border-color: #bd2130;
+  text-align: center;
+  
+}
 .label-wrapper {
   margin: 0;
   flex: 0 0 100%;
@@ -228,7 +235,7 @@ body {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 2.6rem;
   line-height: 1.25;
   display: block;
   position: relative;

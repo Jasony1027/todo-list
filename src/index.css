@@ -44,7 +44,7 @@ textarea {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
-  margin: 0;
+  
 }
 button,
 input {
@@ -60,6 +60,59 @@ body {
   font: 1.6rem/1.25 Arial, sans-serif;
   background-color: #f5f5f5;
   color: #4d4d4d;
+}
+.newsItem {
+  border-bottom: solid;
+  border-top: solid;
+  margin-bottom: 100;
+  padding:20;
+  line-height: 2em;
+  
+}
+.newsSection{
+  margin-bottom:0;
+  font: 1.8rem/1.25 New Century Schoolbook;
+  color: rgb(239, 99, 117);
+}
+
+.newsTitle{
+  margin-bottom:0;
+  margin-top:0;
+  font-family: "Arial Black", Gadget, sans-serif;
+  color:rgb(172, 208, 190);
+ 
+}
+
+.newsPublished{
+  margin-top:0;
+  font: 1.5rem/1.25 Courier New, monospace;
+  color:rgb(145, 145, 145);
+}
+
+.newsAbstract{
+  margin-top:10;
+  font: 1.8rem/1.25 Courier New, monospace;
+  color:rgb(145, 145, 145)
+
+}
+.newsDetails{
+  margin-top:0
+}
+
+.newsUpdated{
+  font: 1.4rem/1.25 Courier New, monospace;
+  color:rgb(145, 145, 145)
+}
+.newsSource{
+  font: 1.6rem/1.25 Courier New, monospace;
+}
+
+.newsLink{
+  text-decoration: none;
+}
+
+.navLink{
+  text-decoration: none;
 }
 
 @media screen and (min-width: 620px) {

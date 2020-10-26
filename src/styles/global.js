@@ -14,8 +14,11 @@ ${({ theme }) => css`
       body {
          background: ${theme.colors.background};
       }
+      a {
+        color: rgb(127, 150, 202);
+      }
       a:visited{
-        color:green;
+        color:rgb(172, 208, 190);
       }
     }
   }

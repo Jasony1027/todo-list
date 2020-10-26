@@ -5,16 +5,16 @@ import Form from "./Form";
 import FilterButton from "./FilterButton";
 
 const DATA = [
-  { id: "todo-0", name: "Eat", status : 0 },
-  { id: "todo-1", name: "Sleep", status : 0 },
-  { id: "todo-2", name: "Repeat", status : 0 }
+  { id: "todo-0", name: "Eat", status: 0 },
+  { id: "todo-1", name: "Sleep", status: 0 },
+  { id: "todo-2", name: "Repeat", status: 0 },
 ];
 
 export const FILTER_MAP = {
   All: () => true,
-  NotStarted: (task) => task.status == 0,
-  Started: (task) =>  task.status== 1,
-  Completed: (task) => task.status == 2,
+  NotStarted: (task) => task.status === 0,
+  Started: (task) => task.status === 1,
+  Completed: (task) => task.status === 2,
 };
 export const FILTER_NAMES = Object.keys(FILTER_MAP);
 
@@ -85,8 +85,8 @@ function Home(props) {
     });
     setTasks(editedTaskList);
   }
-  function clearTasks(){
-    setTasks([])
+  function clearTasks() {
+    setTasks([]);
   }
   //constants
   const tasksNoun = taskList.length !== 1 ? "tasks" : "task";
@@ -99,13 +99,20 @@ function Home(props) {
       <h2 data-testid="headingText" id="list-heading">
         {headingText}
       </h2>
+      <button
+        type="button"
+        className="btn btn__clearAll"
+        onClick={() => clearTasks()}
+      >
+        Clear All Tasks
+      </button>
+
       <ul
         className="todo-list stack-large stack-exception"
         aria-labelledby="list-heading"
       >
         {taskList}
       </ul>
-      <button type="button" className="btn btn__clearAll"  onClick={() => clearTasks()}>Clear All Tasks</button>
     </div>
   );
 }

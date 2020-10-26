@@ -35,31 +35,17 @@ export default function Todo(props) {
   );
   const viewTemplate = (
     <div className="stack-small">
-      <input
-        id={props.id}
-        type="radio"
-        name={props.id}
-        defaultChecked={props.status === 0}
-        onChange={() => props.toggleTaskStatus(props.id, 0)}
-      />
-      NotStarted &nbsp;
-      <input
-        id={props.id}
-        type="radio"
-        name={props.id}
-        defaultChecked={props.status === 1}
-        onChange={() => props.toggleTaskStatus(props.id, 1)}
-      />
-      Started &nbsp;
-      <input
-        id={props.id}
-        type="radio"
-        name={props.id}
-        defaultChecked={props.status === 2}
-        onChange={() => props.toggleTaskStatus(props.id, 2)}
-      />
-      Completed
-      <div className="c-cb"  >{props.name}</div>
+      <div className="c-cb">
+        <input
+          id={props.id}
+          type="checkbox"
+          defaultChecked={props.completed}
+          onChange={() => props.toggleTaskCompleted(props.id)}
+        />
+        <label className="todo-label" htmlFor={props.id}>
+          {props.name}
+        </label>
+      </div>
       <div className="btn-group">
         <button type="button" className="btn" onClick={() => setEditing(true)}>
           Edit <span className="visually-hidden">{props.name}</span>
@@ -85,3 +71,5 @@ export default function Todo(props) {
   }
   return <li className="todo">{isEditing ? editingTemplate : viewTemplate}</li>;
 }
+
+

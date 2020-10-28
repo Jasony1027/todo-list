@@ -10,8 +10,8 @@ export default function List(props) {
       {newsList.map((news) => {
         let imgUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/archive/a/ac/20070325222640%21No_image_available.svg/120px-No_image_available.svg.png"
         try {
-        if (news.media != undefined){
-          if(news.media[0].type == "image"){
+        if (news.media !== undefined){
+          if(news.media[0].type === "image"){
             imgUrl = news.media[0]["media-metadata"][2].url
           }
         }

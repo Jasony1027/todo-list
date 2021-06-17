@@ -7,9 +7,7 @@ export default function Navbar(props) {
     <nav>
       <Link to="/" className="navLink">Home</Link>
       &nbsp;|&nbsp;
-      <Link to="/about" className="navLink">About</Link>
-      &nbsp;|&nbsp;
-      <Link to="/API" className="navLink">API</Link>
+      <Link to="/API" className="navLink">News</Link>
       <ThemeSwitcher />
     </nav>
   );
